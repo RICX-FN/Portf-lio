@@ -93,6 +93,12 @@ h1 {
 
 }
 
+.stack {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
 .sobre {
     padding: 6rem 2rem;
 }
@@ -170,6 +176,33 @@ h1 {
 
 .info-projetos {
     margin-bottom: 5px;
+}
+
+.content-show_more {
+    display: flex;
+    justify-content: center;
+}
+
+.more-cards {
+    display: none;
+}
+
+#btn-show_more {
+    margin-top: 60px;
+    font-size: 1.2em;
+    padding: 1.2rem;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    border: none;
+    color: var(--claro);
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#btn-show_more:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
 }
 
 .contatos {

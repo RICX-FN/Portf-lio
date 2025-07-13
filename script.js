@@ -14,3 +14,13 @@ function enviarMensagem(event) {
 
     window.open(url, '_blank');
 }
+
+function MostrarOcultar() {
+    let mostrar = document.getElementById('more-card')
+
+    if (mostrar.style.display === "none") {
+        mostrar.style.display = "block"
+    } else {
+        mostrar.style.display = "none"
+    }
+}

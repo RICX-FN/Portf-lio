@@ -40,6 +40,12 @@
         <img src="./img/eu.jpg" alt="foto de foto-perfil" class="foto-perfil">
         <h1>Ricardo Bernardo</h1>
         <p class="cabecalho-sub-titulo">Desenvolvedor Front-end</p>
+
+        <p class="stack">
+            <a href="https://skillicons.dev">
+                <img src="https://skillicons.dev/icons?i=html,css,js,git,vscode,ubuntu" />
+            </a>
+        </p>
     </main>
 
     <section id="sobre" class="sebre">
@@ -59,6 +65,32 @@
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <a href="#" target="_blank" class="projeto-imagem"></a>
+                <img src="./img/p-roadlert.png" alt="projeto3" class="projeto-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Road Alert</h3>
+                    <p class="paragrafo-projeto">Um App que permite que os usuários relatem incidentes
+                        rodoviários de
+                        forma rápida e eficiente, contribuindo para a segurança nas estradas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <a href="https://ricx-fn.github.io/roadalert/" target="_blank" class="projeto-imagem"></a>
+                <img src="./img/roadalert-site.png" alt="projeto2" class="projeto-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Road Alert Site Oficial</h3>
+                    <p class="paragrafo-projeto">Baixe agora, site disponivel! Um App que permite que os
+                        usuários
+                        relatem incidentes rodoviários de forma rápida e eficiente, contribuindo para a
+                        segurança nas
+                        estradas.
+                    </p>
+                </div>
+            </div>
 
             <div class="projetos-card">
                 <a href="https://github.com/RICX-FN/YouTube" target="_blank" class="projeto-imagem">
@@ -97,56 +129,39 @@
             </div>
 
             <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/Login-arcade" target="_blank"
-                    class="projeto-imagem">
+                <a href="https://github.com/RICX-FN/Login-arcade" target="_blank" class="projeto-imagem">
                     <img src="./img/login-arcade.png" alt="projeto4" class="projeto-imagem">
                 </a>
                 <div class="caixa-textos-projetos">
                     <h3 class="info-projetos">Tela de login Arcade.</h3>
-                    <p class="paragrafo-projeto">Tela de login Arcade feita com html e css para praticar. Design proveniente do Figma.</p>
+                    <p class="paragrafo-projeto">Tela de login Arcade feita com html e css para praticar. Design
+                        proveniente do Figma.</p>
                 </div>
             </div>
 
-            <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/FN/tree/main/PT%20COD%20MORSE" target="_blank"
-                    class="projeto-imagem">
-                    <img src="./img/p-morse.png" alt="projeto2" class="projeto-imagem">
-                </a>
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Alerta de codigo Morse em Python</h3>
-                    <p class="paragrafo-projeto">Este aplicativo consiste em exibir msg em morse que são
-                        digitados em
-                        português e também com aletas luminosos.</p>
-                </div>
-            </div>
+            <div id="more-card" class="more-cards" class="projetos-caixa">
 
-            <div class="projetos-card">
-                <a href="#" target="_blank" class="projeto-imagem"></a>
-                <img src="./img/p-roadlert.png" alt="projeto3" class="projeto-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Road Alert</h3>
-                    <p class="paragrafo-projeto">Um App que permite que os usuários relatem incidentes
-                        rodoviários de
-                        forma rápida e eficiente, contribuindo para a segurança nas estradas.
-                    </p>
+                <div class="projetos-card">
+                    <a href="https://github.com/RICX-FN/FN/tree/main/PT%20COD%20MORSE" target="_blank"
+                        class="projeto-imagem">
+                        <img src="./img/p-morse.png" alt="projeto2" class="projeto-imagem">
+                    </a>
+                    <div class="caixa-textos-projetos">
+                        <h3 class="info-projetos">Alerta de codigo Morse em Python</h3>
+                        <p class="paragrafo-projeto">Este aplicativo consiste em exibir msg em morse que são
+                            digitados em
+                            português e também com aletas luminosos.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="projetos-card">
-                <a href="https://ricx-fn.github.io/roadalert/" target="_blank" class="projeto-imagem"></a>
-                <img src="./img/roadalert-site.png" alt="projeto2" class="projeto-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Road Alert Site Oficial</h3>
-                    <p class="paragrafo-projeto">Baixe agora, site disponivel! Um App que permite que os
-                        usuários
-                        relatem incidentes rodoviários de forma rápida e eficiente, contribuindo para a
-                        segurança nas
-                        estradas.
-                    </p>
-                </div>
             </div>
 
         </div>
+
+        <div class="content-show_more">
+            <button id="btn-show_more" onclick="MostrarOcultar()">Mostrar mais</button>
+        </div>
+
     </section>
 
     <section id="contatos" class="contatos" onsubmit="enviarMensagem(event)">
