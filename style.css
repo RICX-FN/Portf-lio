@@ -162,7 +162,6 @@ h1 {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    position: top;
 }
 
 .paragrafos-projetos {
@@ -186,6 +185,10 @@ h1 {
 
 .more-cards {
     display: none;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 #btn-show_more {

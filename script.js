@@ -17,10 +17,13 @@ function enviarMensagem(event) {
 
 function MostrarOcultar() {
     let mostrar = document.getElementById('more-card')
+    let btn_exibir = document.getElementById('btn-show_more')
 
     if (mostrar.style.display === "none") {
-        mostrar.style.display = "block"
+        mostrar.style.display = "grid"
+        btn_exibir.innerHTML = "Mostrar menos"
     } else {
         mostrar.style.display = "none"
+        btn_exibir.innerHTML = "Mostrar mais"
     }
 }
