@@ -1,218 +1,387 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Ricardo Júnior</title>
+    <!-- Font Awesome para os Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/img/fn.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Background Estético (Gradiente + Orbs Desfocados) -->
+    <div class="bg-blur-container">
+      <div class="blur-orb orb-1"></div>
+      <div class="blur-orb orb-2"></div>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="./img/FN.ico" type="image/x-icon">
-    <title>Portfólio Ricardo Bernardo</title>
-</head>
+    <!-- Redes Sociais Fixas (Laterais/Translúcidas) -->
+    <aside class="fixed-socials">
+      <a href="https://github.com/RICX-FN" target="_blank" aria-label="GitHub"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/ricardo-j%C3%BAnior-bernardo-024a58301/"
+        target="_blank"
+        aria-label="LinkedIn"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/ricx_f.n/"
+        target="_blank"
+        aria-label="Instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://wa.me/244933569241" target="_blank" aria-label="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=61575062912715"
+        target="_blank"
+        aria-label="Facebook"
+        ><i class="fab fa-facebook"></i
+      ></a>
+    </aside>
 
-<body>
-    <div class="particulas"></div>
-
-    <nav class="navegacao">
-        <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link">Home</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menu-link">Contato</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ricx_f.n?igsh=MTYwM2twYTNvNTFwNA==" class="menu-link">Social</a>
-            </li>
-            <li>
-                <a href="https://docs.google.com/document/d/1uJuiYDf25u2Lnm_zQBuOLQei7Awa7F2Ifh8LSsyXrWI/edit?usp=sharing"
-                    class="menu-link">Curriculum Vitae</a>
-            </li>
+    <!-- Header & Navbar -->
+    <header class="header">
+      <div class="logo">RJ<span>.</span></div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#tech">Tecnologias</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contacte-me</a></li>
         </ul>
-    </nav>
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </nav>
+    </header>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./img/eu.jpg" alt="foto de foto-perfil" class="foto-perfil">
-        <h1>Ricardo Bernardo</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Frontend</p>
+    <main>
+      <!-- Hero / Sobre Mim -->
+      <section id="about" class="hero scroll-reveal">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Olá, eu sou o <span class="text-gradient">Ricardo Júnior</span>
+          </h1>
+          <p class="hero-subtitle">Fullstack Developer</p>
+          <p class="hero-description">
+            Desenvolvedor Fullstack com experiência prática em construção de
+            sistemas reais e APIs escaláveis utilizando Node.js, TypeScript,
+            React e PostgreSQL. Atuo no desenvolvimento de aplicações completas,
+            desde arquitetura de backend até interfaces frontend, incluindo
+            autenticação, integração com APIs externas, modelagem de banco de
+            dados e deploy em produção. Tenho experiência com projetos
+            remunerados e liderança técnica em equipes pequenas, aplicando boas
+            práticas de engenharia de software como Clean Architecture, SOLID,
+            testes automatizados e versionamento com Git. Foco em
+            desenvolvimento de soluções robustas, performáticas e bem
+            estruturadas para produtos modernos e escaláveis.
+          </p>
+          <a href="#contact" class="btn btn-primary">Vamos conversar</a>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-avatar-glass">
+            <!-- Substitua pelo caminho real da sua foto -->
+            <img src="/img/eu.jpg" alt="Ricardo Júnior" />
+          </div>
+        </div>
+      </section>
 
-        <p class="stack">
-            <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=html,css,js,react,typescript,nodejs,express,sqlite,prisma,git,vscode,ubuntu" />
-            </a>
-        </p>
+      <!-- Minhas Tecnologias -->
+      <section id="tech" class="technologies scroll-reveal">
+        <h2 class="section-title">Minhas Tecnologias</h2>
+        <div class="tech-grid">
+          <div class="tech-circle" data-tech="React">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="tech-circle" data-tech="TypeScript">
+            <span class="tech-text">TS</span>
+          </div>
+          <div class="tech-circle" data-tech="JavaScript">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="tech-circle" data-tech="CSS3">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+
+          <div class="tech-circle" data-tech="Node.js">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="tech-circle" data-tech="ExpressJS">
+            <span class="tech-text font-small">ExpressJS</span>
+          </div>
+
+          <div class="tech-circle" data-tech="PostgreSQL">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="tech-circle" data-tech="Prisma ORM">
+            <span class="tech-text font-small">Prisma</span>
+          </div>
+          <div class="tech-circle" data-tech="SQLite">
+            <i class="fa-solid fa-server"></i>
+          </div>
+
+          <div class="tech-circle" data-tech="Git">
+            <i class="fab fa-git-alt"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projetos (Carrossel Smooth com Links) -->
+      <section id="projects" class="projects scroll-reveal">
+        <h2 class="section-title">Projetos em Destaque</h2>
+
+        <div class="carousel-container">
+          <button class="carousel-btn prev-btn" aria-label="Projeto Anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <!-- Card 1 -->
+              <li class="project-card current-slide">
+                <div class="project-img-wrapper">
+                  <img src="/img/btracky.png" alt="Btracky" />
+                </div>
+                <div class="project-info">
+                  <h3>Btracky</h3>
+                  <p class="project-short-desc">
+                    Sistema de gestão financeira. Apresento-lhes meu aplicativo
+                    web: Btracky. Um aplicativo de controle de despesas com uma
+                    interface elegante e funcionalidade completa para manter
+                    suas finanças sob controle.
+                  </p>
+                  <div class="project-more-content">
+                    <p>
+                      Tela de Login: Autenticação de usuários com opção de
+                      registrar nova conta <br />Dashboard: Vista geral de todas
+                      as carteiras <br />Modal de Cartão: Criar carteira com
+                      nome, cor e saldo inicial <br />Modal de Operação:
+                      Adicionar receita (verde) ou despesa (vermelho)
+                      <br />Modal de Saldo: Atualizar saldo da carteira Tabela
+                      de <br />Operações: Visualizar todas as transações com
+                      destaque de cor
+                    </p>
+                  </div>
+                  <div class="project-actions">
+                    <button class="btn-more">
+                      Mostrar mais <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <a
+                      href="https://btracky.netlify.app/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      Ver Projeto
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- Card 2 -->
+              <li class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="/img/copyright.webp" alt="E-Commerce" />
+                </div>
+                <div class="project-info">
+                  <h3>E-commerce Para Empresas, Fabricas e Freelancers</h3>
+                  <p class="project-short-desc">
+                    E-commerce Platform (Fullstack) Plataforma de e-commerce
+                    desenvolvida do zero com foco em escalabilidade e
+                    estruturação de backend robusto.
+                  </p>
+                  <div class="project-more-content">
+                    <p>
+                      O sistema foi projetado para suportar catálogo de
+                      produtos, gestão de pedidos e fluxo completo de compra,
+                      com arquitetura separada entre frontend e backend.
+                      Responsabilidades técnicas: Desenvolvimento de API RESTful
+                      utilizando Node.js e Express Modelagem de banco de dados
+                      relacional com PostgreSQL e Prisma ORM Implementação de
+                      autenticação e controle de acesso Estruturação de
+                      arquitetura baseada em camadas (Controllers, Services,
+                      Repositories) Integração frontend/backend com React e
+                      TypeScript Deploy e configuração de ambiente de produção.
+                    </p>
+                  </div>
+                  <div class="project-actions">
+                    <button class="btn-more">
+                      Mostrar mais <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <a
+                      href="https://github.com/RICX-FN?tab=repositories"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      Ver Projeto
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- Card 3 -->
+              <li class="project-card">
+                <div class="project-img-wrapper">
+                  <img src="/img/atm.png" alt="ATM CHECK" />
+                </div>
+                <div class="project-info">
+                  <h3>ATM CHECK</h3>
+                  <p class="project-short-desc">
+                    ATM-CHECK — Sistema de Monitoramento de Caixas ATM Sistema
+                    backend desenvolvido para monitoramento e verificação de
+                    disponibilidade de caixas automáticos.
+                  </p>
+                  <div class="project-more-content">
+                    <p>
+                      O objetivo foi criar uma solução estruturada para registo
+                      e análise de estados de ATMs, permitindo rastreio
+                      eficiente de falhas e disponibilidade.
+                    </p>
+                  </div>
+                  <div class="project-actions">
+                    <button class="btn-more">
+                      Mostrar mais <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <a
+                      href="https://atmcheck.netlify.app/"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      Ver Projeto
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel-btn next-btn" aria-label="Próximo Projeto">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-indicator current-indicator"></button>
+          <button class="carousel-indicator"></button>
+          <button class="carousel-indicator"></button>
+        </div>
+      </section>
+
+      <!-- Contacte-me (Alternador Moderno) -->
+      <section id="contact" class="contact scroll-reveal">
+        <h2 class="section-title">Contacte-me</h2>
+        <div class="contact-box-glass">
+          <div class="contact-tabs">
+            <button class="tab-btn active" data-target="whatsapp-tab">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+            <button class="tab-btn" data-target="email-tab">
+              <i class="fa-regular fa-envelope"></i> E-mail
+            </button>
+          </div>
+
+          <div class="contact-content-wrapper">
+            <!-- Tab WhatsApp -->
+            <div id="whatsapp-tab" class="contact-tab-content active">
+              <p>
+                Precisa de uma resposta rápida? Inicie uma conversa direta
+                comigo no WhatsApp agora mesmo.
+              </p>
+              <a
+                href="https://wa.me/244933569241?text=Olá%20Ricardo,%20vi%20o%20teu%20portfólio!"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fab fa-whatsapp"></i> Enviar Mensagem (WhatApp)
+              </a>
+            </div>
+            <!-- Tab Email -->
+            <div id="email-tab" class="contact-tab-content">
+              <p>
+                Prefere uma proposta formal ou detalhar o seu projeto por
+                escrito? Envie-me um e-mail.
+              </p>
+              <a href="mailto:seu.email@dominio.com" class="btn btn-primary">
+                <i class="fa-regular fa-envelope"></i> cesar15bernardo.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <section id="sobre" class="sebre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Olá, meu nome é Ricardo Bernardo, Tecnico Informático com experiência em desenvolvimento de software
-                e
-                criação de soluções tecnológicas inovadoras. Sou um Desenvolvimento Web, com projetos que vão desde
-                sistemas de reservas a aplicativos móveis para recrutamento. Apaixonado por tecnologia, busco
-                oportunidades para aplicar meu
-                conhecimento e crescer na área de desenvolvimento de software.
-            </p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">RJ<span>.</span></div>
+          <p>Criando soluções robustas com design minimalista.</p>
         </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-
-            <!-- Projeto RoadAlert APP Mobile -->
-            
-            <div class="projetos-card">
-                <a href="#" target="_blank" class="projeto-imagem"></a>
-                <img src="./img/p-roadlert.png" alt="projeto3" class="projeto-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Road Alert</h3>
-                    <p class="paragrafo-projeto">Um App que permite que os usuários relatem incidentes
-                        rodoviários de
-                        forma rápida e eficiente, contribuindo para a segurança nas estradas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Projeto ROADALERT Site Oficial -->
-
-            <div class="projetos-card">
-                <a href="https://ricx-fn.github.io/roadalert/" target="_blank" class="projeto-imagem"></a>
-                <img src="./img/roadalert-site.png" alt="projeto2" class="projeto-imagem">
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Road Alert Site Oficial</h3>
-                    <p class="paragrafo-projeto">Baixe agora, site disponivel! Um App que permite que os
-                        usuários
-                        relatem incidentes rodoviários de forma rápida e eficiente, contribuindo para a
-                        segurança nas
-                        estradas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Projeto Youtube Home Page -->
-
-            <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/YouTube" target="_blank" class="projeto-imagem">
-                    <img src="./img/youtube.png" alt="projeto1" class="projeto-imagem">
-                </a>
-
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Replica da interface principal do YouTube</h3>
-                    <p class="paragrafo-projeto">Repliquei a interface do YouTube, aplicando conceitos de grid e flex
-                        layout.</p>
-                </div>
-            </div>
-
-            <!-- Projeto Calculadora -->
-
-            <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/Calculadora" target="_blank" class="projeto-imagem">
-                    <img src="./img/calculadora.png" alt="projeto1" class="projeto-imagem">
-                </a>
-
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Calculadora com Tema Claro e Escuro.</h3>
-                    <p class="paragrafo-projeto">Uma calculadora web moderna e responsiva com tema claro/escuro,
-                        desenvolvida com HTML, CSS e JavaScript vanilla.</p>
-                </div>
-            </div>
-
-            <!-- Projeto Facilita -->
-
-            <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/FN/tree/main/Facilita" target="_blank" class="projeto-imagem">
-                    <img src="./img/facilita.png" alt="projeto1" class="projeto-imagem">
-                </a>
-
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Facilita.</h3>
-                    <p class="paragrafo-projeto">Um portal onde os usuarios residentes em Angola possam obter informações sobre documentação necessaria para determinados orgãos Publicos e Privados.</p>
-                </div>
-            </div>
-
-            <!-- Projeto Tela de Login Arcade -->
-
-            <div class="projetos-card">
-                <a href="https://github.com/RICX-FN/Login-arcade" target="_blank" class="projeto-imagem">
-                    <img src="./img/login-arcade.png" alt="projeto4" class="projeto-imagem">
-                </a>
-                <div class="caixa-textos-projetos">
-                    <h3 class="info-projetos">Tela de login Arcade.</h3>
-                    <p class="paragrafo-projeto">Tela de login Arcade feita com html e css para praticar. Design
-                        proveniente do Figma.</p>
-                </div>
-            </div>
-
-            <!-- Projetos ocultos -->
-
-            <div id="more-card" class="more-cards" class="projetos-caixa">
-
-                <!-- Projeto Mobile Com Python e Cordova-->
-
-                <div class="projetos-card">
-                    <a href="https://github.com/RICX-FN/FN/tree/main/PF13/pf13" target="_blank" class="projeto-imagem">
-                        <img src="./img/p-mobile.png" alt="projeto1" class="projeto-imagem">
-                    </a>
-                    <div class="caixa-textos-projetos">
-                        <h3 class="info-projetos">Projeto Mobile com Cordova</h3>
-                        <p class="paragrafo-projeto">Uma app de recruta de funcionarios com IA, com intuito de
-                            abrangir o
-                            mercado de Recursos Humanos e deixar a produtividadde no topo.</p>
-                    </div>
-                </div>
-
-                <!-- Projeto Código Morse -->
-                
-                <div class="projetos-card">
-                    <a href="https://github.com/RICX-FN/FN/tree/main/PT%20COD%20MORSE" target="_blank"
-                        class="projeto-imagem">
-                        <img src="./img/p-morse.png" alt="projeto2" class="projeto-imagem">
-                    </a>
-                    <div class="caixa-textos-projetos">
-                        <h3 class="info-projetos">Alerta de codigo Morse em Python</h3>
-                        <p class="paragrafo-projeto">Este aplicativo consiste em exibir msg em morse que são
-                            digitados em
-                            português e também com aletas luminosos.</p>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#tech">Tecnologias</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
         </div>
-
-        <div class="content-show_more">
-            <button id="btn-show_more" onclick="MostrarOcultar()">Mostrar mais</button>
+        <div class="footer-socials">
+          <h4>Siga-me</h4>
+          <div class="footer-icons">
+            <a
+              href="https://github.com/RICX-FN"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ricardo-j%C3%BAnior-bernardo-024a58301/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ricx_f.n/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/244933569241"
+              target="_blank"
+              aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61575062912715"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
         </div>
-
-    </section>
-
-    <section id="contatos" class="contatos" onsubmit="enviarMensagem(event)">
-        <h2 class="contato-titulo">Entre em Contacto</h2>
-
-        <form class="formulario-contato" id="formulario">
-            <div class="grupo-form">
-                <input placeholder="Digite seu nome" class="campo-form" id="nome">
-            </div>
-
-            <div class="grupo-form">
-                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="4" id="mensagem"></textarea>
-            </div>
-
-            <button type="submit" class="botao-form">Enviar pelo WhatsApp</button>
-        </form>
-    </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ricardo Júnior. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
-
-
+  </body>
 </html>
-
-
